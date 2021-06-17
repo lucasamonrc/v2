@@ -6,6 +6,7 @@ The version 2.0 of my personal website. The page simplicity is implemented by de
 
 - [Next.js](https://nextjs.org)
 - [Chakra UI](https://chakra-ui.com/)
+- [Firebase](https://firebase.google.com/)
 
 ## 🛠 Setup
 
