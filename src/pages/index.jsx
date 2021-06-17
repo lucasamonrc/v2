@@ -43,14 +43,14 @@ export default function Home({ projects }) {
             fontSize={['2xl', '3xl']}
             fontWeight="bold"
             mx="auto"
-            mb="4"
+            mb="6"
             textAlign="center"
           >
             💼 Projects
           </Text>
 
           {projects.map((project) => (
-            <Section key={project.id} id={project.id} title={project.title} href={project.url}>
+            <Section key={project.id} id={project.id} title={project.title} url={project.url}>
               {project.description}
             </Section>
           ))}
@@ -99,6 +99,8 @@ export async function getStaticProps(context) {
 
     return dateB - dateA;
   });
+
+  console.log(projects);
 
   return {
     props: { projects },
