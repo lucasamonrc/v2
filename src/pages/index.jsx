@@ -3,9 +3,9 @@ import { BiArrowToTop } from 'react-icons/bi'
 import { useState, useEffect } from 'react'
 import Head from 'next/head';
 
-import { Header } from "../component/Header";
-import { Section } from "../component/Section";
-import { Welcome } from "../component/Welcome";
+import { Header } from "../components/Header";
+import { Section } from "../components/Section";
+import { Welcome } from "../components/Welcome";
 
 export default function Home({ projects }) {
   const [scrollEnabled, setScrollEnabled] = useState(false);
@@ -46,7 +46,7 @@ export default function Home({ projects }) {
             mb="6"
             textAlign="center"
           >
-            💼 Projects
+            Projects
           </Text>
 
           {projects.map((project) => (
@@ -99,8 +99,6 @@ export async function getStaticProps(context) {
 
     return dateB - dateA;
   });
-
-  console.log(projects);
 
   return {
     props: { projects },

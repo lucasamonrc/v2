@@ -10,7 +10,7 @@ export function Welcome({ children }) {
         mb="4"
         textAlign="center"
       >
-        ✨ About
+        About
       </Text>
       <Text fontSize={['md', 'lg']} color="gray.600" lineHeight="9">{children}</Text>
     </Box>
